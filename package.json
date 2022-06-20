@@ -1,0 +1,39 @@
+{
+  "name": "firstproject",
+  "version": "1.0.0",
+  "description": "First Cypress Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "cypress:open": "cypress open"
+  },
+  "keywords": [
+    "e2e",
+    "test",
+    "cypress",
+    "automation",
+    "framework"
+  ],
+  "author": "Emre Karakaya",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^10.1.0",
+    "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^3.1.0",
+    "cypress-xpath": "^1.6.2",
+    "mocha": "^10.0.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.1"
+  },
+  "reporters":{
+    "reporter": "mochawesome",
+    "reporterOptions": {
+       "reportDir": "cypress/results",
+       "overwrite": false,
+       "html": false,
+       "json": true
+    }
+ }
+}
