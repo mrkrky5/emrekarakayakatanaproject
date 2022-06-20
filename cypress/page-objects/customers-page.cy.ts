@@ -1,4 +1,4 @@
-
+//Customer page last line elements of the table
 /// <reference types="cypress" />
 export class KatanaCustomersPage{
     lastCustomerName(){

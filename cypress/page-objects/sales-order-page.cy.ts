@@ -1,3 +1,4 @@
+//Sales order page table, last line customer name field 
 /// <reference types="cypress" />
 export class SalesOrder{
     salesOrderCustomerName(){

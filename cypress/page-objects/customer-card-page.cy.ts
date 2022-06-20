@@ -1,4 +1,4 @@
-
+// Customer Card Page elements
 /// <reference types="cypress" />
 export class KatanaCustomerCardPage{
     firstNameLabel(){

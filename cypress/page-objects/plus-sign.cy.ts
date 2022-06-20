@@ -1,3 +1,4 @@
+//Elements on clicking plus sign that used in tests
 /// <reference types="cypress" />
 export class PlusSign{
     plusSign(){

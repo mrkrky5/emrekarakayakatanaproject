@@ -1,4 +1,4 @@
-
+//login page elements
 /// <reference types="cypress" />
 export class KatanaLogin{
     katanaMailInput(){
