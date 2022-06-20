@@ -5,6 +5,8 @@ const login = new KatanaLogin();
 const cardPage = new KatanaCustomerCardPage();
 const plusSign = new PlusSign();
 
+//Login with valid credentials
+
     it('Katanamrp Login',() => {
         cy.visit('https://katanamrp.com/login/');
 
@@ -41,6 +43,7 @@ const plusSign = new PlusSign();
             .click();
     });
 
+    //Checking and seeing existance of all fields in customer card page
     it('Customer Page Check',() => {
 
         cardPage.firstNameLabel().should('exist');

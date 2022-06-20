@@ -8,6 +8,8 @@ const cardPage = new KatanaCustomerCardPage();
 const salesOrder = new SalesOrder();
 const plusSign = new PlusSign();
 
+//Login with valid credentials
+
 var firstName="Test";
 var lastName="Try";
 var email = "dummy@gmail.com";
@@ -26,6 +28,7 @@ var phone = "123456789";
             .click();
     });
 
+    //Creating a customer with related fields
     it('Customer Page Check',() => {
 
         cardPage.firstNameField().type(firstName);
@@ -44,6 +47,7 @@ var phone = "123456789";
         
     });
 
+    //After creating a new customer, trying to create a sale for that customer and see correct information on sales order page
     it('Sales Order Check',() => {
         cy.get('.MuiAutocomplete-root > .MuiFormControl-root > .MuiInputBase-root').type(firstName+" "+lastName)
         .type('{enter}');

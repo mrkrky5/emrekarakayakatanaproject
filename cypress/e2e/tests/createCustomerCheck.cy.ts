@@ -7,7 +7,7 @@ const cardPage = new KatanaCustomerCardPage();
 const customersPage = new KatanaCustomersPage();
 const plusSign = new PlusSign();
 
-
+//Login with valid credentials
 var firstName="Test";
 var lastName="Try";
 var email = "dummy@gmail.com";
@@ -26,6 +26,7 @@ var phone = "123456789";
             .click();
     });
 
+    //Typing strings to the related fields(first name, last name, email, phone and comment)
     it('Customer Page Check',() => {
 
         cardPage.firstNameField().type(firstName);
@@ -40,6 +41,7 @@ var phone = "123456789";
         
     });
 
+    //Checking if given fields on customer card page equals to this newly created customer on customers page
     it('Customers Check',() => {
 
        customersPage.lastCustomerName().invoke('text').should('equal', firstName+" "+lastName);

@@ -5,6 +5,8 @@ const login = new KatanaLogin();
 const cardPage = new KatanaCustomerCardPage();
 const plusSign = new PlusSign();
 
+//Login with valid credentials
+
     it('Katanamrp Login',() => {
         cy.visit('https://katanamrp.com/login/');
 
@@ -18,6 +20,7 @@ const plusSign = new PlusSign();
             .click();
     });
 
+    //Checking if display name label has right color and includes first name and last name fields
     it('Customer Page Check',() => {
 
     var firstName="Test";

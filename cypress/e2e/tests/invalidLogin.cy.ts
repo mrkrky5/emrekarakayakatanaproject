@@ -1,6 +1,8 @@
 import { KatanaLogin } from '../../page-objects/katana-login-page.cy';
 const login = new KatanaLogin();
 
+
+//Trying to login with invalid credentilas and see error message
     it('Katana Login',() => {
         cy.visit('https://katanamrp.com/login/');
 

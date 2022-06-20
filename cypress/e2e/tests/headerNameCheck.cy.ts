@@ -5,6 +5,7 @@ const login = new KatanaLogin();
 const cardPage = new KatanaCustomerCardPage();
 const plusSign = new PlusSign();
 
+//Login with valid credentials
 it('Katanamrp Login',() => {
     cy.visit('https://katanamrp.com/login/');
 
@@ -17,6 +18,7 @@ it('Katanamrp Login',() => {
     .click();
 });
 
+//Checking if header name field is equals to first name and last name combined(display name) 
 it('Customer Page Check',() => {
 
     var firstName="Test";
